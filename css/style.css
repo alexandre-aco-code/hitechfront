@@ -1,0 +1,769 @@
+/* CSS GENERAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+
+/* *****************************************************************
+                        GLOBAL
+***************************************************************** */
+
+* {
+	box-sizing: border-box; 
+}
+
+html {
+	font-size: 62.5%;
+	margin:0;
+	padding:0;
+	background: #222;
+}
+
+img {
+	max-width:100%;
+	height: auto;
+}
+
+:root {
+	--main-font-size: 1.5rem;
+	--h1-font-size: 3.6rem;
+	--h2-font-size: 2.4rem;
+	--h3-font-size: 1.8rem;
+	--line-height-size: 2.0rem;
+}
+
+/* *****************************************************************
+                        GENERALITIES
+***************************************************************** */
+
+/* Le corps du document */
+body {
+	font-size: var(--main-font-size);
+	margin: 0;
+	padding: 0;
+	line-height: var(--line-height-size);
+	font-family: 'Open Sans', sans-serif;
+	color: #555;
+	background-color: #eee;
+}
+
+.container {
+	max-width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Raleway', sans-serif;
+	color:#333;
+}
+
+h1 {
+	font-size: var(--h1-font-size);
+	font-weight: 400;
+	margin:5rem 0;
+}
+
+h2 {
+	font-size: var(--h2-font-size);
+	color: #333;
+}
+
+
+h3 {
+	font-size: var(--h3-font-size);
+}
+
+a {
+	text-decoration: none;
+	color: #0c6588;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #e2f7ff;
+}
+
+main {
+	/* padding: 2em; */
+}
+
+article {
+	background-color: #fff;
+	padding: 1em;
+}
+
+section + section {
+	margin-top: 2em;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+}
+
+.icon {
+	display: inline-block;
+	font-size: 2.5rem;
+	stroke-width: 0;
+	stroke: currentColor;
+	fill: currentColor;
+	margin:auto 10px;
+	vertical-align: middle;
+}
+
+.inline {
+	display:inline-block;
+	margin:0.3rem;
+}
+
+
+
+/* *****************************************************************
+                            HEADER
+***************************************************************** */
+
+.header {
+	text-align: center;
+	background: center url("../images/header.jpg");
+	font-family: 'Raleway', sans-serif;
+}
+
+/* LA BARRE TOUT EN HAUT DU HEADER */
+
+.header_top {
+	background-color: #e2f7ff;
+	font-weight: bold;
+	line-height:2.5rem;
+	padding-bottom:1rem;
+	display:flex;
+	flex-direction:column;
+	font-size:1.4rem;
+}
+
+
+.header_top > p {
+	margin-bottom: 0;
+	margin-top:0;
+}
+
+.div_interlignage {
+	margin-top:1rem;
+}
+
+.header_top button {
+	display:inline-block;
+	border:none;
+	font-weight: bold;
+	background-color: #e2f7ff;
+	color:#0c6588;
+}
+
+.header_top div p {
+	display: inline-block;
+	margin:0;
+}
+
+
+/* La barre au milieu du header : LOGO, BARRE DE RECHERCHE, PANIER */
+
+/*LOGO*/
+.header_middle {
+	height:260px;
+}
+
+.header_middle img {
+	width:60px;
+	margin-top:3rem;
+}
+
+.header_middle a:hover {
+	text-decoration: none;
+}
+.logo {
+	color:white;
+	line-height: 4rem;
+	font-family: 'Raleway',
+}
+
+.logo p:nth-of-type(1) {
+	margin:0;
+	font-size: 3.6rem;
+	padding-bottom:0;
+}
+
+.logo p:nth-of-type(2) {
+	margin:0;
+	font-size: 1.5rem;
+	margin-bottom:1rem;
+}
+
+/* MENU */
+
+.header_middle .menu {
+	display:none;
+}
+
+/* COMPTE ET PANIER */
+
+.header_middle .account {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	color:white;
+	white-space: nowrap;
+
+
+}
+
+.header_middle .icon-user,
+.header_middle .icon-cart {
+	font-size: 3rem;
+}
+
+.header_middle .account p {
+	margin:0rem 3rem;
+}
+
+/* La barre du bas du header : NAV avec UL et 4 LI */
+
+.header_bottom {
+	background-color: #e2f7ff;
+}
+
+.header_bottom ul {
+	list-style: none;
+}
+
+.header_bottom li {
+	line-height: 5rem;
+	color:#0c6588;
+	font-weight: 700;
+	white-space: nowrap;
+}
+
+.header_bottom li a {
+	color:#0c6588;
+}
+
+
+
+
+
+
+/* *****************************************************************
+                            MAIN
+***************************************************************** */
+main {
+	background-color: #fff;
+}
+main .ariane {
+	display:none;
+}
+
+
+/* ARTICLE GEANT pour le AOC Ecran */
+
+/*Header de l'article avec titre et liens rapides */
+
+main header div {
+	display:flex;
+	flex-direction: column;
+}
+
+main header div a {
+	text-decoration: underline;
+	color:#0c6588;
+	font-weight:700;
+	line-height: 2rem;
+}
+
+/* ---------1. SECTION PRESENTATION -------------- */
+
+main section div span {
+	background-color: #eee;
+	color:black;
+	height:30px;
+	padding-right:0.5rem;
+	margin-top:1.5rem;
+	margin-right:1rem;
+	vertical-align:middle ;
+	display: inline-block;
+}
+
+main section div span p {
+	display:inline;
+	vertical-align: middle;
+}
+
+main section div span p::before {
+	content: "•";
+	font-size:3rem;
+	vertical-align: middle;
+	color: white;
+	margin-right:1rem;
+}
+
+
+
+/* AJOUT POUR FAIRE LES FLECHES */
+
+main section div span {
+	position: relative;
+	background: #eee;
+	border: 4px solid #eee;
+}
+
+main section div span:after,
+main section div span:before {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+main section div span:after {
+	border-color: rgba(238, 238, 238, 0);
+	border-right-color: #eee;
+	border-width: 15px;
+	margin-top: -15px;
+}
+
+main section div span:before {
+	border-color: rgba(238, 238, 238, 0);
+	border-right-color: #eee;
+	border-width: 16px;
+	margin-top: -16px;
+}
+
+/* --- FIN DES FLECHES */
+
+/*présentation a gauche avec le CARROUSSEL */
+
+.textUnderPic {
+	text-align: center;
+	font-size:1.2rem;
+}
+
+/* Présentation a droite */
+
+/* a. Le logo et titre */
+.logoOnSide {
+	display:flex;
+	justify-content: left;
+	align-items: center ;
+}
+
+.logoOnSide img {
+	display:none;
+}
+
+/* b. block gris */
+
+.greyBlock {
+	background-color: #eee;
+	display:flex;
+	align-items: center;
+}
+
+/* prize */
+
+.div_prize {
+	text-align: center;
+	width:50%;
+	margin:5rem 0 3rem;
+}
+
+.prize {
+	font-size: 4rem;
+	margin-bottom: 0.5rem;
+}
+
+.ecoParticipation {
+	font-size: 1.2rem;
+	margin-top:2.5rem;
+}
+
+/* buttons_basket */
+
+.buttons_basket {
+	text-align: center;
+	width:50%;
+}
+
+.buttons_basket button {
+	border: none;
+	width:200px;
+	padding:2rem 2rem;
+}
+
+.add_basket {
+	background-color: #0c6588;
+	color:white;
+	font-size:2.4rem;
+}
+
+.add_wishes {
+	background-color: #fff;
+	color:#0c6588;
+	font-size:1.8rem;
+}
+
+
+/* block gris foncé */
+
+.darkGrey {
+	background-color: #d6d6d6;
+}
+
+.darkGrey p {
+	margin-top: 0;
+	padding:2.5rem;
+	text-align: center;
+
+}
+
+/* paragraphe en dessous du block gris */
+/* Liste */
+
+.list_caracteristics {
+	padding-left:40px;
+}
+
+
+
+/* <!-- 2. SECTION DESCRIPTIF --> */
+
+.descriptif h1 {
+	margin: 10rem 0;
+}
+.descriptif h2 {
+	margin: 6rem 0;
+	font-weight: 500;
+}
+
+.flex_p_img {
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+}
+
+.flex_img_p {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+/* <!-- 3. SECTION CARACTERISTIQUES TECHNIQUES --> */
+.caracteristics img {
+	margin: 1rem 2rem;
+	padding: 2rem;
+	border: 1px solid #eee;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.caracteristics h2 {
+	margin: 3rem 10rem 3rem 20px;
+	font-weight: 500;
+}
+
+.caracteristics div {
+	display: flex;
+	flex-direction: column;
+	margin:5rem 0;
+	align-items: baseline;
+	
+
+}
+
+.caracteristics table {
+	width:90%;
+	margin:1rem auto;
+	border:1px solid #eee;
+	text-align: left;
+	border-collapse:collapse;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+
+}
+
+.caracteristics table td {
+	vertical-align:middle;
+	padding:0.5rem;
+	border-top:1px solid #eee;
+	border-bottom:1px solid #eee;
+
+}
+
+
+/* *****************************************************************
+                            FOOTER
+***************************************************************** */
+footer {
+	text-align: center;
+	background-color: #333;
+	color:#ddd;
+}
+
+footer h4 {
+	color:white;
+	font-size: 3.5rem;
+	font-weight: 400;
+	margin-top:12rem;
+}
+
+footer i {
+	font-size:3.5rem;
+	margin:0rem 2rem;
+	opacity: 0.33;
+}
+
+footer i:hover {
+	color:red;
+	opacity: 1;
+}
+
+footer div a {
+	text-decoration: none;
+	color:#eee;
+	text-decoration: underline;
+	margin-top:1.2rem;
+}
+
+.listOfA a {
+	display: block;
+	margin-top:1.2rem;
+
+}
+
+.hideShow {
+	display:none;
+}
+
+.trois_wa img {
+	width:50px;
+}
+
+
+
+
+
+
+
+/* *****************************************************************
+                            RESPONSIVE
+***************************************************************** */
+
+
+/* 
+Points de rupture 
+- entre mobile et tablette: 480px 
+- entre tablette et bureau: 960px */
+
+@media screen and (min-width: 480px) {
+
+	/* HEADER */
+	/* Header top */
+	.header_top {
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.div_interlignage {
+		margin-top: 0;
+	}
+
+	/* header mid */
+
+	.header_middle {
+		display:flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.header_middle img {
+		margin-top: 0rem;
+	}
+
+	/* header bot */
+
+	.nav_flex {
+		display:flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.nav_flex li {
+		width:49%;
+	}
+
+	/* MAIN */
+
+	main header div {
+		flex-direction: row;
+		justify-content: flex-start;
+
+	}
+	main header div a {
+		width:15%;
+	}
+
+	.caracteristics img {
+		border: 1px solid #ddd;
+		box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+	}
+
+	.caracteristics table {
+		border:1px solid #ddd;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+
+	}
+	.caracteristics table td {
+
+		border-top: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
+
+	}
+
+}
+
+@media screen and (min-width: 960px) {
+
+
+	/* header mid */
+
+
+	.flex_logo {
+		display:flex;
+	}
+
+	.header_middle {
+		height:130px;
+	}
+
+	.header_middle .menu {
+		display: block;
+	}
+
+	.header_middle .menu fieldset{
+		vertical-align: middle;
+		color:#e2f7ff;
+		background-color: #68b9dc;
+		border:1px solid white;
+		border-radius: 20px;
+		padding:1.5rem 5rem;
+	}
+
+
+	/* header bot */
+
+	.nav_flex {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.nav_flex li {
+		width: 25%;
+	}
+
+	/* main */
+
+	main .ariane {
+		padding:1rem;
+		display: flex;
+	}
+
+	main .ariane a {
+		margin:1rem 2rem;
+		text-decoration: underline;
+	}
+
+	.icon-shop {
+		margin-right:2rem;
+	}
+
+	.icon-database {
+		margin-right:2rem;
+	}
+
+	/* 1. SECTION PRESENTATION */
+
+	.div_presentation_flex {
+		display:flex;
+	}
+
+	.div_presentation_flex div:first-child {
+		width:50%;
+	}
+
+	.logoOnSide img {
+		display: block;
+	}
+
+	/* 2. SECTION DESCRIPTIF */
+
+	.flex_p_img {
+		flex-direction:row;
+	}
+
+	.flex_img_p {
+		flex-direction:row;
+	}
+
+	.flex_p_img img,
+	.flex_img_p img {
+		width:45%;
+	}
+
+	/* 3. SECTION CARACTERISTIQUES TECHNIQUES */
+
+	.caracteristics img {
+		border: 2px solid #ccc;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+	}
+
+	.caracteristics div {
+		flex-direction:row;
+		align-items: center;
+		justify-content: space-between;
+
+	}
+
+	.caracteristics table {
+		width: 70%;
+		border: 2px solid #ccc;
+		text-align: left;
+		border-collapse: collapse;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+
+	}
+
+
+	/* FOOTER */
+
+	.flex_footer {
+		display:flex;
+		flex-wrap:wrap;
+	}
+
+	.flex_footer div {
+		flex-basis: 50%;
+
+	}
+
+	.hideShow {
+		display:block;
+	}
+
+
+
+}

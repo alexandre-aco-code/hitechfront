@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Product empty</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Admin">
+	<link rel="icon" href="images/logo.svg" />
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand text-white font-weight-bold" href="products.html">
+                <img src="images/logo.svg" alt="logohitech" width="30">HiTech.NET
+            </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <h1 class="text-secondary">Produit: (NOUVEAU)</h1>
+              </li>
+              
+              
+            </ul>
+            <div class="dropdown ml-auto d-flex flex-nowrap align-middle">
+                <img class="bg-dark" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS7oA-9H6Huolu6XxlIFriEsQND6z4zVhQsMg&usqp=CAU" alt="bobette" width="50">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bob</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">mon compte</a>
+                    <a class="dropdown-item" href="#">Déconnexion</a>
+                </div>
+            
+            </div>
+          </div>
+        </nav>
+                
+
+    </header>
+    
+    <main class="row container-fluid">
+        
+        
+        <div class="col-md-3 bg-light px-3 d-none d-md-block">
+            
+          <div class="nav text-secondary flex-column nav-pills ml-3 pl-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              
+              <h4 class="my-3"><i class="fas fa-home"></i> Accueil</h4>
+              <a class="nav-link" href="#">Tableau de bord</a>
+              
+              <h4 class="my-3"><i class="fas fa-globe-asia"></i> Site Web</h4>
+              <a class="nav-link" href="#">Gestion des rubriques</a>
+              <a class="nav-link" href="#">Gestion des actualités</a>
+              
+              <h4 class="my-3"><i class="fas fa-shopping-basket"></i> Boutique</h4>
+              <a class="nav-link" href="#" role="tab">Gestion des rayons</a>
+              <a class="nav-link active" href="products.html">Gestion des produits</a>
+              <a class="nav-link" href="#">Gestion des commandes</a>
+              
+              <h4 class="my-3"><i class="fas fa-cogs"></i> Paramètres</h4>
+              <a class="nav-link" href="#">Gestion des utilisateurs</a>
+              <a class="nav-link" href="#">Gestion des rôles</a>
+              <a class="nav-link" href="#">Préférences</a>
+              
+            </div>
+            
+        </div>
+        
+        <div class="col-md-9">
+            
+                        
+            <form> 
+              
+              <div class="d-flex justify-content-between align-items-center my-5">
+                
+                <button type="reset" class="btn btn-outline-dark"><i class="fas fa-times"></i> Annuler les modifications</button>
+                
+                <button type="submit" class="btn btn-primary"><i class="fas fa-check"></i> Valider et enregistrer la fiche</button>
+                
+              </div>
+              
+              <fieldset class="form-group bg-light px-5">
+                <legend>Gestion</legend>
+                <div class="row">
+                    <label class="col-form-label col-sm-2 pt-0">Status</label>
+                    <div class="col-sm-10">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="enAttente" checked>
+                        <label class="form-check-label" for="gridRadios1">
+                          En attente de mise en ligne
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="enBoutique">
+                        <label class="form-check-label text-success" for="gridRadios2">
+                          En boutique
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="retiré">
+                        <label class="form-check-label text-danger" for="gridRadios3">
+                          Retiré
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                
+                <div class="form-group row">
+                  <label for="boutiqueDeBG" class="col-sm-2 col-form-label">Boutique</label>
+                  
+                  <div class=" col-10">
+                    <select class="custom-select" id="boutiqueDeBG">
+                      <option selected>Choisir une boutique ... </option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  
+              
+                </div>
+              
+                <div class="form-group row">
+                  <label for="rayondeBg" class="col-sm-2 col-form-label">Rayon</label>
+                  
+                  <div class=" col-10">
+                    <select class="custom-select" id="rayondeBg">
+                      <option selected>Choisir un rayon ... </option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                
+                </div>
+              
+              </fieldset>
+
+              <fieldset class="form-group bg-light px-5">
+                <legend>Présentation</legend>
+                
+                  <div class="form-group row">
+                    <label for="marque" class="col-2 col-form-label">Marque</label>
+                    <div class="col-10">
+                      <input type="text" class="form-control" id="marque">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="produit" class="col-2 col-form-label">Référence du produit</label>
+                    <div class="col-10">
+                      <input type="password" class="form-control" id="produit">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="etiquettes" class="col-2 col-form-label">Etiquettes</label>
+                    <div class="col-10">
+                      <input type="password" class="form-control" id="etiquettes">
+                    </div>
+                  </div>
+                  
+                  <div class="form-group row">
+                    <label class="col-2 col-form-label" for="prixformulaire">Prix</label>
+                    <div class="col-5 input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">Prix</div>
+                      </div>
+                      <input type="text" class="form-control" id="prixformulaire" placeholder="">
+                        <div class="input-group-text">€</div>
+                    </div>
+                    <div class="col-5 input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">éco-participation</div>
+                      </div>
+                      <input type="text" class="form-control" id="ecomachin" placeholder="">
+                        <div class="input-group-text">€</div>
+                    </div>
+                  </div>
+                  
+                  <div class="form-group row mb-2">
+                    <label for="textAreatropbeau" class="col-sm-2 col-form-label">Textarea</label>
+                    <div class=" col-sm-10">
+                      <textarea class="form-control is-invalid py-5" id="textAreatropbeau" placeholder="" required></textarea>
+                    </div>
+                    <div class="invalid-feedback">
+                      Tapez votre texte Madame Moooooosieur
+                    </div>
+                  </div>
+                
+                
+              </fieldset>
+              
+              <fieldset class="form-group bg-light px-5">
+                <legend>Photos</legend>
+                  <div class=" my-2 form-group row">
+                    
+                    <label class="col-2 col-form-label" for="fichier1">Photo 1</label>
+                    <div class="col-10">
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="fichier1" lang="fr">
+                        <label class="custom-file-label" for="fichier1">Choisir un fichier</label>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class=" my-2 form-group row">
+                    
+                    <label class="col-2 col-form-label" for="fichier2">Photo 2</label>
+                    <div class="col-10">
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="fichier2" lang="fr">
+                        <label class="custom-file-label" for="fichier2">Choisir un fichier</label>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class=" my-2 form-group row">
+                    
+                    <label class="col-2 col-form-label" for="fichier3">Photo 3</label>
+                    <div class="col-10">
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="fichier3" lang="fr">
+                        <label class="custom-file-label" for="fichier3">Choisir un fichier</label>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class=" my-2 form-group row">
+                    
+                    <label class="col-2 col-form-label" for="fichier4">Photo 4</label>
+                    <div class="col-10">
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="fichier4" lang="fr">
+                        <label class="custom-file-label" for="fichier4">Choisir un fichier</label>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class=" my-2 form-group row">
+                    
+                    <label class="col-2 col-form-label" for="fichier5">Photo 5</label>
+                    <div class="col-10">
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="fichier5" lang="fr">
+                        <label class="custom-file-label" for="fichier5">Choisir un fichier</label>
+                      </div>
+                    </div>
+                    
+                  </div>
+                
+                
+                
+              </fieldset>
+              
+              
+              
+              
+              <fieldset class="form-group bg-light px-5">
+                
+                <legend>Descriptif 1</legend>
+                  <div class="form-group row">
+                    <label for="descriptif1" class="col-2 col-form-label">Titre</label>
+                    <div class="col-10">
+                      <input type="password" class="form-control" id="descriptif1">
+                    </div>
+                  </div>
+                  
+                  
+                  <div class=" my-2 form-group row">
+                    
+                    <label class="col-2 col-form-label" for="fihciheeraeoirqsfq">Image</label>
+                    <div class="col-10">
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="fihciheeraeoirqsfq" lang="fr">
+                        <label class="custom-file-label" for="fihciheeraeoirqsfq">Choisir un fichier</label>
+                      </div>
+                    </div>
+                    
+                  </div>
+                
+                  <div class="form-group row mb-2">
+                    <label for="textAreadeplus" class="col-sm-2 col-form-label">Texte</label>
+                    <div class=" col-sm-10">
+                      <textarea class="form-control is-invalid py-5" id="textAreadeplus" placeholder="" required></textarea>
+                    </div>
+                    <div class="invalid-feedback">
+                      Tapez votre texte Madame Moooooosieur
+                    </div>
+                  </div>
+                
+                
+                
+              </fieldset>
+              <fieldset class="form-group bg-light px-5">
+                
+                <legend>Descriptif 2</legend>
+                  <div class="form-group row">
+                    <label for="qzqefqazfqfdsgq" class="col-2 col-form-label">Titre</label>
+                    <div class="col-10">
+                      <input type="password" class="form-control" id="qzqefqazfqfdsgq">
+                    </div>
+                  </div>
+                  
+                  
+                  <div class=" my-2 form-group row">
+                    
+                    <label class="col-2 col-form-label" for="customFile5">Image</label>
+                    <div class="col-10">
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="customFile5" lang="fr">
+                        <label class="custom-file-label" for="customFile5">Choisir un fichier</label>
+                      </div>
+                    </div>
+                    
+                  </div>
+                
+                  <div class="form-group row mb-2">
+                    <label for="qfgaergadgqsdfg" class="col-sm-2 col-form-label">Texte</label>
+                    <div class=" col-sm-10">
+                      <textarea class="form-control is-invalid py-5" id="qfgaergadgqsdfg" placeholder="" required></textarea>
+                    </div>
+                    <div class="invalid-feedback">
+                      Tapez votre texte Madame Moooooosieur
+                    </div>
+                  </div>
+                
+                
+                
+              </fieldset>
+              <fieldset class="form-group bg-light px-5">
+                
+                <legend>Descriptif 3</legend>
+                  <div class="form-group row">
+                    <label for="qerqsdqd" class="col-2 col-form-label">Titre</label>
+                    <div class="col-10">
+                      <input type="password" class="form-control" id="qerqsdqd">
+                    </div>
+                  </div>
+                  
+                  
+                  <div class=" my-2 form-group row">
+                    
+                    <label class="col-2 col-form-label" for="uiolyuilyiuly">Image</label>
+                    <div class="col-10">
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="uiolyuilyiuly" lang="fr">
+                        <label class="custom-file-label" for="uiolyuilyiuly">Choisir un fichier</label>
+                      </div>
+                    </div>
+                    
+                  </div>
+                
+                  <div class="form-group row mb-2">
+                    <label for="cxvcxvbdfgb" class="col-sm-2 col-form-label">Texte</label>
+                    <div class=" col-sm-10">
+                      <textarea class="form-control is-invalid py-5" id="cxvcxvbdfgb" placeholder="" required></textarea>
+                    </div>
+                    <div class="invalid-feedback">
+                      Tapez votre texte Madame Moooooosieur
+                    </div>
+                  </div>
+                
+                
+                
+              </fieldset>
+              
+
+                
+                
+            </form>
+            
+                
+        </div>
+        
+                
+        
+    </main>
+    <footer>
+        
+    </footer>
+    
+    
+    <script src="https://kit.fontawesome.com/dd0d4a400f.js" crossorigin="anonymous"></script>
+    
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
